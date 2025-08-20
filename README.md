@@ -21,13 +21,13 @@ The pipeline automates the process of building, testing, and deploying the Node.
 5. Monitoring: AWS CloudWatch Agent collects and displays key server and application metrics (CPU, memory, disk, and logs).
 
 ## Screenshots
-Successful Jenkins Pipeline
+### Successful Jenkins Pipeline
 <img width="1919" height="746" alt="image" src="https://github.com/user-attachments/assets/a7b73528-0605-4978-b5df-f1c0b91a9a55" />
 
-Live Application
+### Live Application
 <img width="748" height="221" alt="Screenshot 2025-08-20 153023" src="https://github.com/user-attachments/assets/39009607-2785-48fb-b96a-82f3c7689eef" />
 
-CloudWatch Monitoring Dashboard
+### CloudWatch Monitoring Dashboard
 <img width="1919" height="1079" alt="Screenshot 2025-08-20 160135" src="https://github.com/user-attachments/assets/bcacdcef-9d6a-45df-abd1-644c76cf0ae2" />
 
 ## Detailed Deployment Steps
