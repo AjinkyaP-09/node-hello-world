@@ -1,0 +1,22 @@
+#!/bin/bash
+set -e
+
+# This script installs NGINX and Certbot for SSL setup.
+# Note: The final certbot command is interactive and requires user input.
+
+echo "--- Installing NGINX ---"
+sudo apt update -y
+sudo apt install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+echo "--- Installing Certbot ---"
+sudo apt install certbot python3-certbot-nginx -y
+
+echo "--- NGINX and Certbot installation complete! ---"
+echo ""
+echo "--- NEXT STEP: CONFIGURE NGINX AND RUN CERTBOT ---"
+echo "1. Create your NGINX config file at /etc/nginx/sites-available/node-app"
+echo "2. Enable the site: sudo ln -s /etc/nginx/sites-available/node-app /etc/nginx/sites-enabled/"
+echo "3. Run the following command and follow the prompts:"
+echo "   sudo certbot --nginx -d your_domain.ddns.net"
